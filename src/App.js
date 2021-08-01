@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import { Home } from './screens'
+function App () {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <div className="header">
+        <a className="a" href="/">
+          <img src="https://123milhas.com/img/logo123.svg" alt="123 Milhas" />
         </a>
-      </header>
+      </div>
+      <Home />
     </div>
   );
 }
