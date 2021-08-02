@@ -21,7 +21,7 @@ const generateArrayOfYears = () => {
     let idx = 0;
     let years = []
 
-    for (let i = y; i <= max; i++) {
+    for (let i = y - 1; i <= max; i++) {
         years.push({ value: i, id: idx });
         idx += 1
     }

@@ -121,7 +121,7 @@ function Home () {
 
   const handleSearchPackage = async () => {
     if (formDestination && formMonth && formYear) {
-
+      
       setError(false)
       setIsEmpty(false)
       setIsSearchFinish(false)
@@ -142,7 +142,7 @@ function Home () {
               const [, m, y] = data.split('/');
 
 
-              const isValidValue = (element.toUpperCase() === item.id || element === item.city) && formMonth === m && formYear === y;
+              const isValidValue = (element.toUpperCase() === item.id || element.toUpperCase() === item.city.toUpperCase()) && formMonth === m && formYear === y;
               return isValidValue
             }
             return false
@@ -187,7 +187,10 @@ function Home () {
     <div className="app">
       <div className="form-input">
         <div>
-          <input type="text" value={formDestination} onChange={(e) => setFormInput(e.target.value)} placeholder="Rio de Ja, CWB, BSB" />
+          <div className="origin">
+            <label>Origem: Belo horizonte - MG</label>
+          </div>
+          <input type="text" value={formDestination} onChange={(e) => setFormInput(e.target.value)} placeholder="Destino" />
         </div>
 
         <div>

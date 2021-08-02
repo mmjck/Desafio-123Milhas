@@ -6,6 +6,9 @@
   margin: 20px;
 }
 
+.origin {
+  margin-bottom: 5px;
+}
 .form-input {
   width: 100%;
   padding: 20px 10px;
@@ -85,6 +88,10 @@
   .form-input option {
     font-family: "Montserrat", sans-serif;
     margin: 5px;
+  }
+
+  .alert {
+    padding: 20px 30px;
   }
 }
 
@@ -233,6 +240,6 @@ option {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-10px);
+    transform: translateX(10px);
   }
 }
