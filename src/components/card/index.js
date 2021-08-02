@@ -3,8 +3,6 @@ import Methods  from '../../utils/methods';
 
 
 function Card ({ id, city, imageUrl, bestFlight, bestHotel, bestPackagePrice }) {
-
- 
   let inboundDate = null;
   let outboundDate = null;
 
