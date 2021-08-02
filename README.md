@@ -70,6 +70,12 @@ Após intalar todas as dependências, digite:
 
 A aplicação está disponível no endereço http://localhost:3000/
 
+</br>
+
+Você pode usar como teste os seguintes dados
+- Destino: Salvador
+- Mês: Janeiro
+- Ano: 2021
 ---
 
 ## Requerimentos
